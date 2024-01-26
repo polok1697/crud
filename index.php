@@ -17,7 +17,7 @@ if ($result->num_rows == 0) {
         <th>SL</th>
         <th>Name</th>
         <th>City</th>
-        <!-- <th>Phone</th> -->
+        <th>Phone</th>
         <th>Action</th>
     </tr>
     <?php $sn =1;
@@ -25,10 +25,10 @@ if ($result->num_rows == 0) {
 
    ?>
     <tr class=" m-auto border rounded shadow p-4 border ">
-        <td><?= $sn++ ?></td>
+    <td><?= $sn++ ?></td>
         <td><?= $row->name?></td>
         <td><?= $row->city?></td>
-        <!-- <td><?= $row->phone?></td> -->
+        <td><?= $row->phone?></td>
         <td>
             <a href="./editStudent.php?id=<?= $row->id ?>"><button>Edit</button></a>
             <a href="./deleteStudent.php?id=<?= $row->id ?>"><button>Delete</button></a>
